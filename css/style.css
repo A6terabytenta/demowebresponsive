@@ -9,6 +9,7 @@ body {
 	font-size: 13px;
 	background: #ffffff;
 	border-top: 5px solid #f0831e;
+	position: relative;
 }
 
 ul li {
@@ -299,6 +300,7 @@ div.menu ul li.menu_7 a.active {
 	float: left;
 	text-align: center;
 	border: 1px solid #b4b4b4;
+	display: inline-block;
 }
 
 #content #content_left #items .item a:hover {
@@ -472,7 +474,7 @@ div.menu ul li.menu_7 a.active {
 }
 
 #copyright {
-	background: #ff9a00;
+	background: #f88e01;
 	height: 35px;
 	text-align: center;
 	line-height: 35px;
@@ -481,3 +483,22 @@ div.menu ul li.menu_7 a.active {
 	font-weight: bold;
 }
 
+#page_top {
+	width: 80px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 5px;
+	display: block;
+	background: #f0831e;
+	position: fixed;
+	text-decoration: none;
+	color: #fff;
+	right: 20px;
+	bottom: 20px;
+	display: none;
+}
+
+#page_top:hover {
+	opacity: 0.7;
+}

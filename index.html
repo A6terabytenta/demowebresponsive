@@ -25,7 +25,7 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<p>滋賀県草津市のエステ・発毛・育毛の専門家がいるサロンです。</p>
+			<p class="p">滋賀県草津市のエステ・発毛・育毛の専門家がいるサロンです。</p>
 			<img src="images/header_logo.jpg" alt="images/header_logo.jpg" class="header_logo"/>
 			<div class="header_infor">
 				<p>滋賀県草津市大路1丁目8-1 南洋軒ビル6F</p>
@@ -255,11 +255,26 @@
 			Copyright　Feminine（フェミニン）　All Rights Reserved.
 		</div>
 	</div>
+	<a href="#" id="page_top">
+		<span>PAGE TOP</span>
+	</a>
 
 	<script type="text/javascript" src="js/jquery.meanmenu.min.js"></script>
 	<script type="text/javascript" src="js/behavior.js"></script>
 	<script type="text/javascript">
-		interval();
+		var btnPageTop = document.getElementById("page_top");
+		var screenHeight = window.screen.availHeight;
+		window.onscroll = function() { 
+			myfunction()
+		};
+
+		function myfunction() {
+			if(document.body.scrollTop > (screenHeight / 2) || document.documentElement.scrollTop > (screenHeight / 2)) {
+				btnPageTop.style.display = "block";
+			} else {
+				btnPageTop.style.display = "none";
+			}
+		}
 	</script>
 </body>
 </html>

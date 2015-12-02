@@ -8,18 +8,32 @@
 		text-align: center;
 	}
 
+	#header p.p{
+		margin-top: 50px;
+	}
+
 	#header .header_logo {
+		margin-top: 10px;
 		float: none;
 		width: 100%;
 	}
 
 	#header .header_infor {
+		margin-top: 10px;
 		float: none;
 		text-align: center;
 	}
 
 	.nav {
 		display: none;
+	}
+
+	a.subNav {
+		text-decoration: none;
+	}
+
+	a.subNav:hover {
+		text-decoration: underline;
 	}
 
 	/* content */
@@ -43,10 +57,12 @@
 	}
 	#content #content_left .infor img {
 		float: none;
+		margin: 10px 0;
 	}
 
 	#content #content_left .infor .information {
-		width: 100%;
+		padding: 0 1%;
+		width: 98%;
 		float: none;
 		text-align: left;
 	}
@@ -56,11 +72,11 @@
 
 	#content #content_left #items {
 		width: 100%;
-		text-align: center;
 	}
 
 	#content #content_left #items .item {
-		margin: 2% auto;
+		margin-right: 0px;
+		margin: 5px;
 		float: none;
 	}
 
@@ -73,12 +89,26 @@
 	#content #content_left .new {
 		display: block;
 		text-align: left;
-		padding-left: 1%;
-		width: 99%;
+		margin: 0 2%;
+		width: 96%;
+		font-size: 14px;
 	}
+
+	#content #content_left .new .date {
+		float: left;
+		clear: none;
+		width: 96%;
+		margin-bottom: 5px;
+	}
+	#content #content_left .new .note {
+		width: 96%;
+		padding-left: 15px;
+	}
+
 	#content #content_left .titles {
-		width: 95%;
+		width: 93%;
 		padding: 1% 2%;
+		margin: 0 1%;
 	}
 	/* footer */
 	#footer #inner {
@@ -109,5 +139,9 @@
 		float: none;
 		margin: 0 auto;
 		margin-top: 20px;
+	}
+
+	#copyright {
+		padding-bottom: 70px;
 	}
 }
